@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #101014;
+    color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #18181f;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #30303a;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #7c5cff;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #20184d, #101014);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #bbb;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.heroButton {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #7c5cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input,
+select {
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #202027;
+    color: white;
+    font-size: 16px;
+}
+
+input {
+    flex: 1;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.game {
+    background: #1b1b22;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #30303a;
+    transition: 0.2s;
+}
+
+.game:hover {
+    transform: translateY(-5px);
+    border-color: #7c5cff;
+}
+
+.gameIcon {
+    font-size: 55px;
+    text-align: center;
+    padding: 20px;
+    background: #252530;
+    border-radius: 10px;
+}
+
+.game h3 {
+    margin-bottom: 5px;
+}
+
+.genre {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    background: #7c5cff;
+    color: white;
+    padding: 11px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6245d6;
+}
+
+.cart {
+    margin-top: 70px;
+    background: #1b1b22;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.cartBottom {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+    border-top: 1px solid #30303a;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .cartBottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

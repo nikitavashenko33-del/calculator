@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🎮 GameStore</div>
+
+    <nav>
+        <a href="#catalog">Каталог</a>
+        <a href="#cart">Корзина 🛒 <span id="cartCount">0</span></a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Добро пожаловать в GameStore</h1>
+    <p>Игры для настоящих геймеров</p>
+    <a href="#catalog" class="heroButton">Перейти к каталогу</a>
+</section>
+
+<main>
+
+    <section id="catalog">
+        <h2>Каталог игр</h2>
+
+        <div class="controls">
+            <input
+                type="text"
+                id="search"
+                placeholder="🔎 Найти игру..."
+            >
+
+            <select id="genre">
+                <option value="all">Все жанры</option>
+                <option value="Action">Экшен</option>
+                <option value="RPG">RPG</option>
+                <option value="Racing">Гонки</option>
+                <option value="Sports">Спорт</option>
+            </select>
+        </div>
+
+        <div id="games" class="games"></div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>🛒 Корзина</h2>
+
+        <div id="cartItems">
+            <p>Корзина пуста</p>
+        </div>
+
+        <div class="cartBottom">
+            <strong>
+                Итого: <span id="total">0</span> ₸
+            </strong>
+
+            <button id="orderButton">
+                Оформить заказ
+            </button>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 GameStore</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
